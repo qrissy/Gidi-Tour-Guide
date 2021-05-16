@@ -15,4 +15,6 @@
 
     <!-- Category name for events [CHAR LIMIT=20] -->
     <string name="category_events">Events</string>
+
+    <string name="new_item">new item</string>
 </resources>
