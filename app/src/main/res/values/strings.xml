@@ -1,0 +1,18 @@
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=15] -->
+    <string name="app_name">Gidi Tour Guide</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Category name for restaurants [CHAR LIMIT=20] -->
+    <string name="category_restaurants">Restaurants</string>
+
+    <!-- Category name for hotels [CHAR LIMIT=20] -->
+    <string name="category_hotels">Hotels</string>
+
+    <!-- Category name for night clubs [CHAR LIMIT=20] -->
+    <string name="category_night_clubs">Night Clubs</string>
+
+    <!-- Category name for events [CHAR LIMIT=20] -->
+    <string name="category_events">Events</string>
+</resources>
