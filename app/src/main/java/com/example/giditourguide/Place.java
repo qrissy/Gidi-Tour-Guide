@@ -92,19 +92,4 @@ public class Place {
     public int getImageResourceId() {
         return mImageResourceId;
     }
-
-    /**
-     * Returns the string representation of the {@link Place} object.
-     */
-    @NonNull
-    @Override
-    public String toString() {
-        return "Place{" +
-                "mNameOfPlace='" + mNameOfPlace + '\'' +
-                ", mAddress='" + mAddress + '\'' +
-                ", mBusinessHours=" + mBusinessHours + '\'' +
-                ", mWebsite=" + mWebsite + '\'' +
-                ", mImageResourceId=" + mImageResourceId +
-                '}';
-    }
 }
