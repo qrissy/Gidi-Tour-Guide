@@ -23,8 +23,30 @@ public class Place {
     /** The website of the place */
     private String mWebsite;
 
+    /** Date of the event */
+    private String mDate;
+
     /** Image resource ID of the place */
     private int mImageResourceId;
+
+    /**
+     * Create a new Place object.
+     *
+     * @param nameOfPlace is a potential place of the user might visit
+     *
+     * @param address address of a likely place to visit
+     *
+     * @param businessHours the time business start and end
+     *
+     * @param imageResourceId is the drawable Resource ID for the image associated with the place
+     */
+    public Place(String nameOfPlace, String address, String businessHours, String date, int imageResourceId) {
+        mNameOfPlace = nameOfPlace;
+        mAddress = address;
+        mBusinessHours = businessHours;
+        mDate = date;
+        mImageResourceId = imageResourceId;
+    }
 
     /**
      * Create a new Place object.
@@ -87,7 +109,14 @@ public class Place {
     }
 
     /**
-     * Get the image resource ID of the place.
+     * Get the date of the event
+     */
+    public String getDate() {
+        return mDate;
+    }
+
+    /**
+     * Return the image resource ID of the place.
      */
     public int getImageResourceId() {
         return mImageResourceId;
