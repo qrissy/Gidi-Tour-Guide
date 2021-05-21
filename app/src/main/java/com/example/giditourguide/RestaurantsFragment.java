@@ -28,27 +28,27 @@ public class RestaurantsFragment extends Fragment {
 
         // Create an array of words
         final ArrayList<Place> places = new ArrayList<>();
-        places.add(new Place("Shiro Restaurant & Bar", "Block XVI 3 & 4 Victoria Island Oniru Estate, Eti-Osa 101241, Lagos",
-                "12:00 PM - 11:30 PM", "0818 629 8888", "https://shiro-pan-asian-restaurant.business.site/", R.drawable.shiro));
-        places.add(new Place("Hard Rock Cafe", "Landmark Village, Water Corporation Road, Oniru, VI, 550104, Lagos",
-                "12:00 PM - 11:30 PM", "0908 198 8888", "https://www.hardrockcafe.com/location/lagos",
+        places.add(new Place(getString(R.string.shiro), getString(R.string.victoria_island),
+                getString(R.string.time_restaurant_one), getString(R.string.phone_restaurant_one), getString(R.string.site_restaurant_one), R.drawable.shiro));
+        places.add(new Place(getString(R.string.hard_rock), getString(R.string.landmark),
+                getString(R.string.time_restaurant_two), getString(R.string.phone_restaurant_two), getString(R.string.site_restaurant_two),
                 R.drawable.hard_rock_cafe));
-        places.add(new Place("RSVP Lagos", "9 Eletu Ogabi St, Victoria Island 101001, Lagos", "11:00 AM - 11:00 PM",
-                "0818 616 6666", "https://rsvplagos.com/", R.drawable.rsvp));
-        places.add(new Place("Ocean Basket", "35 Akin Adesola St, Victoria Island, Lagos", "10:30 AM - 10:30 PM",
-                "0816 059 1821", "https://www.nigeria.oceanbasket.com/", R.drawable.ocean_basket));
-        places.add(new Place("Cactus Restaurant", "20/24 Ozumba Mbadiwe Rd, Victoria Island, Lagos", "7:30 AM - 10:00 PM",
-                "0802 777 7666", "https://web.facebook.com/CactusBakery", R.drawable.cactus));
-        places.add(new Place("Noir Lagos", "4a Akin Olugbade St, Victoria Island, Lagos", "12:00 PM - 11:00 PM",
-                "0908 066 6687", "http://www.noir.live/", R.drawable.noir));
-        places.add(new Place("Craft Gourmet", "14 Idowu Martins St, Victoria Island, Lagos", "8:00 AM - 10:00 PM",
-                "0909 777 7752", "linktr.ee/craftlagos", R.drawable.craft_gourmet));
-        places.add(new Place("The Yellow Chilli Restaurant & Bar", "27, Oju Olobun Close, Off Bishop Oluwole Street, Victoria Island, Lagos",
-                "11AM - 11PM", "08099623614", "http://yellowchilling.com/", R.drawable.the_yellow_chilli));
-        places.add(new Place("Bungalow Restaurant", "1296 Akin Adesola St, Victoria Island, Lagos", "10:30AM - 11:30PM",
-                "0803 304 9104", "https://www.bungalowrestaurant.com/", R.drawable.bungalow));
-        places.add(new Place("Izanagi", "19B Idejo St, Victoria Island 101241, Lagos", "12:00 PM - 10:30 PM",
-                "0706 222 2222", "http://izanagirestaurant.com/", R.drawable.izanagi));
+        places.add(new Place(getString(R.string.rsvp), getString(R.string.eletu), getString(R.string.time_restaurant_three),
+                getString(R.string.phone_restaurant_three), getString(R.string.site_restaurant_three), R.drawable.rsvp));
+        places.add(new Place(getString(R.string.ocean), getString(R.string.akin), getString(R.string.time_restaurant_four),
+                getString(R.string.phone_restaurant_four), getString(R.string.site_restaurant_four), R.drawable.ocean_basket));
+        places.add(new Place(getString(R.string.cactus), getString(R.string.ozumba), getString(R.string.time_restaurant_five),
+                getString(R.string.phone_restaurant_five), getString(R.string.site_restaurant_five), R.drawable.cactus));
+        places.add(new Place(getString(R.string.noir), getString(R.string.akin_olugbade), getString(R.string.time_restaurant_six),
+                getString(R.string.phone_restaurant_six), getString(R.string.site_restaurant_six), R.drawable.noir));
+        places.add(new Place(getString(R.string.craft), getString(R.string.martins), getString(R.string.time_restaurant_seven),
+                getString(R.string.phone_restaurant_seven), getString(R.string.site_restaurant_seven), R.drawable.craft_gourmet));
+        places.add(new Place(getString(R.string.yellow), getString(R.string.oju),
+                getString(R.string.time_restaurant_eight), getString(R.string.phone_restaurant_eight), getString(R.string.site_restaurant_eight), R.drawable.the_yellow_chilli));
+        places.add(new Place(getString(R.string.bungalow), getString(R.string.adesola), getString(R.string.time_restaurant_nine),
+                getString(R.string.phone_restaurant_nine), getString(R.string.site_restaurant_nine), R.drawable.bungalow));
+        places.add(new Place(getString(R.string.izanagi), getString(R.string.idejo), getString(R.string.time_restaurant_ten),
+                getString(R.string.phone_restaurant_ten), getString(R.string.site_restaurant_ten), R.drawable.izanagi));
 
         // Create a {@link PlaceAdapter}, whose data source is a list of {@link Place}s. The
         // adapter knows how to create list items for each item in the list.

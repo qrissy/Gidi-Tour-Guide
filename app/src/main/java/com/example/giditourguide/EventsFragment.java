@@ -28,23 +28,23 @@ public class EventsFragment extends Fragment {
 
         // Create an array of words
         ArrayList<Place> places = new ArrayList<>();
-        places.add(new Place("Craftmanship Art Exhibition", "114 Dopemu Road, Lagos, LA",
-                "12:00 PM", "May 21, 2021", R.drawable.craftmanship));
-        places.add(new Place("GOALFEST 2021", "Balmoral Convention Centre, Federal Palace Hotel,, Victoria Island, Lagos 100001",
-                "3:00 PM - 10:00 PM", "May 29, 2021", R.drawable.goalfest));
-        places.add(new Place("Unusual Suspects", "3b Isiola Oyekan Close, Off Adeleke Adedoyin Street, Victoria Island, Lagos 23401",
-                "4:00 PM – 10:00 PM", "May 23, 2021", R.drawable.unusual_suspect));
-        places.add(new Place("MEC TRADE FAIR / HANGOUT", "Lanre Awolokun Street, Lagos, LA",
-                "9:00 AM – 6:00 PM", "May 30, 2021", R.drawable.mec_trade_fair));
-        places.add(new Place("Digital Nomad Roundtable", "Polystar Building, 4th floor, Second roundabout, Maruwa, Lekki, Lagos 234101", "3:30 PM – 7:00 PM",
-                "May 27, 2021", R.drawable.digital_nomads));
-        places.add(new Place("Not-so Pop-up", "183 Herbert Macaulay Way, Lagos, LA 100001", "12:00 PM – 7:00 PM", "May 22, 2021",
+        places.add(new Place(getString(R.string.craftmanship), getString(R.string.dopemu),
+                getString(R.string.time_event_one), getString(R.string.date_event_one), R.drawable.craftmanship));
+        places.add(new Place(getString(R.string.goalfest), getString(R.string.balmoral),
+                getString(R.string.time_event_two), getString(R.string.date_event_two), R.drawable.goalfest));
+        places.add(new Place(getString(R.string.unusual), getString(R.string.isiola),
+                getString(R.string.time_event_three), getString(R.string.date_event_three), R.drawable.unusual_suspect));
+        places.add(new Place(getString(R.string.mec), getString(R.string.lanre),
+                getString(R.string.time_event_four), getString(R.string.date_event_four), R.drawable.mec_trade_fair));
+        places.add(new Place(getString(R.string.digital), getString(R.string.polystar), getString(R.string.time_event_five),
+                getString(R.string.date_event_five), R.drawable.digital_nomads));
+        places.add(new Place(getString(R.string.not), getString(R.string.herbert), getString(R.string.time_event_six), getString(R.string.date_event_six),
                 R.drawable.not_so_pop_up));
-        places.add(new Place("Yoga By The Beach", "Elegushi Royal Beach Lekki Lagos, By Road 3, Lekki, LA", "8:00 AM – 10:00 AM", "May 29, 2021",
+        places.add(new Place(getString(R.string.yoga), getString(R.string.elegushi), getString(R.string.time_event_seven), getString(R.string.date_event_seven),
                 R.drawable.yoga_by_the_beach));
-        places.add(new Place("The SoundMan Concert 2.0", "176 Idewu Street, Lagos, LA 102241", "6:00 PM - 2:00 AM", "Jun 5, 2021",
+        places.add(new Place(getString(R.string.soundman), getString(R.string.idewu), getString(R.string.time_event_eight), getString(R.string.date_event_eight),
                 R.drawable.the_soundman));
-        places.add(new Place("Jingle and Mingle House Party", "Agidingbi, Ikeja, Lagos., Lagos, LA", "11:00 AM – 8:30 PM", "June 26, 2021",
+        places.add(new Place(getString(R.string.jingle), getString(R.string.agidingni), getString(R.string.time_event_nine), getString(R.string.date_event_nine),
                 R.drawable.jingle_and_mingle));
 
         // Create a {@link PlaceAdapter}, whose data source is a list of {@link Place}s. The
