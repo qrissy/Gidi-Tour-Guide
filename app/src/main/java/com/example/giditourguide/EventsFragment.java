@@ -67,7 +67,7 @@ public class EventsFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
                 Place place = places.get(i);
-                Intent intent = new Intent(getActivity(), PlaceDetailActivity.class);
+                Intent intent = new Intent(getActivity(), EventDetailActivity.class);
                 intent.putExtra("place_name", place.getNameOfPlace());
                 intent.putExtra("place_address", place.getAddress());
                 intent.putExtra("business_hour", place.getBusinessHours());
