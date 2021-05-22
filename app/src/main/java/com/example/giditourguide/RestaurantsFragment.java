@@ -1,5 +1,6 @@
 package com.example.giditourguide;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -62,6 +64,22 @@ public class RestaurantsFragment extends Fragment {
         // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
         // {@link ListView} will display list items for each {@link Word} in the list.
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                Place place = places.get(i);
+                Intent intent = new Intent(getActivity(), PlaceDetailActivity.class);
+                intent.putExtra("place_name", place.getNameOfPlace());
+                intent.putExtra("place_address", place.getAddress());
+                intent.putExtra("business_hour", place.getBusinessHours());
+                intent.putExtra("place_phone", place.getPhoneNumber());
+                intent.putExtra("website", place.getWebsite());
+                intent.putExtra("place_image", place.getImageResourceId());
+                startActivity(intent);
+            }
+        });
 
         return rootView;
     }

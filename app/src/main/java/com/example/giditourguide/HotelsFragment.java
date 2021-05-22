@@ -1,5 +1,6 @@
 package com.example.giditourguide;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -27,7 +29,7 @@ public class HotelsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.place_list, container, false);
 
         // Create an array of words
-        ArrayList<Place> places = new ArrayList<>();
+        final ArrayList<Place> places = new ArrayList<>();
         places.add(new Place(getString(R.string.radisson), getString(R.string.mbadiwe), getString(R.string.time_hotel_one),
                 getString(R.string.phone_hotel_one), getString(R.string.site_hotel_one), R.drawable.radisson_blu));
         places.add(new Place(getString(R.string.continental), getString(R.string.kofo), getString(R.string.time_hotel_two),
@@ -62,6 +64,22 @@ public class HotelsFragment extends Fragment {
         // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
         // {@link ListView} will display list items for each {@link Word} in the list.
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                Place place = places.get(i);
+                Intent intent = new Intent(getActivity(), PlaceDetailActivity.class);
+                intent.putExtra("place_name", place.getNameOfPlace());
+                intent.putExtra("place_address", place.getAddress());
+                intent.putExtra("business_hour", place.getBusinessHours());
+                intent.putExtra("place_phone", place.getPhoneNumber());
+                intent.putExtra("website", place.getWebsite());
+                intent.putExtra("place_image", place.getImageResourceId());
+                startActivity(intent);
+            }
+        });
 
         return rootView;
     }
