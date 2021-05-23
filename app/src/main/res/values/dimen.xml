@@ -3,4 +3,12 @@
     <!-- Height of each list item -->
     <dimen name="list_item_height">88dp</dimen>
     <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="image_height">320dp</dimen>
+    <dimen name="margin_top">10dp</dimen>
+    <dimen name="text_view_height">44dp</dimen>
+    <dimen name="margin_right">4dp</dimen>
+    <dimen name="padding_left">16dp</dimen>
+    <dimen name="image_width">24dp</dimen>
+    <dimen name="text_view_padding">5dp</dimen>
 </resources>

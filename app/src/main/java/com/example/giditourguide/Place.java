@@ -8,36 +8,47 @@ import androidx.annotation.NonNull;
  */
 public class Place {
 
-    /** The name of the place */
+    /**
+     * The name of the place
+     */
     private String mNameOfPlace;
 
-    /** The address of the place */
+    /**
+     * The address of the place
+     */
     private String mAddress;
 
-    /** The time the place is open for business */
+    /**
+     * The time the place is open for business
+     */
     private String mBusinessHours;
 
-    /** The phone number of the place */
+    /**
+     * The phone number of the place
+     */
     private String mPhoneNumber;
 
-    /** The website of the place */
+    /**
+     * The website of the place
+     */
     private String mWebsite;
 
-    /** Date of the event */
+    /**
+     * Date of the event
+     */
     private String mDate;
 
-    /** Image resource ID of the place */
+    /**
+     * Image resource ID of the place
+     */
     private int mImageResourceId;
 
     /**
      * Create a new Place object.
      *
-     * @param nameOfPlace is a potential place of the user might visit
-     *
-     * @param address address of a likely place to visit
-     *
-     * @param businessHours the time business start and end
-     *
+     * @param nameOfPlace     is a potential place of the user might visit
+     * @param address         address of a likely place to visit
+     * @param businessHours   the time business start and end
      * @param imageResourceId is the drawable Resource ID for the image associated with the place
      */
     public Place(String nameOfPlace, String address, String businessHours, String date, int imageResourceId) {
@@ -51,16 +62,11 @@ public class Place {
     /**
      * Create a new Place object.
      *
-     * @param nameOfPlace is a potential place of the user might visit
-     *
-     * @param address address of a likely place to visit
-     *
-     * @param businessHours the time business start and end
-     *
-     * @param phoneNumber the contact number of the place
-     *
-     * @param website is where the place can be found online
-     *
+     * @param nameOfPlace     is a potential place of the user might visit
+     * @param address         address of a likely place to visit
+     * @param businessHours   the time business start and end
+     * @param phoneNumber     the contact number of the place
+     * @param website         is where the place can be found online
      * @param imageResourceId is the drawable Resource ID for the image associated with the place
      */
     public Place(String nameOfPlace, String address, String businessHours, String phoneNumber,

@@ -204,4 +204,13 @@
     <string name="time_hotel_ten">24 hours</string>
     <string name="phone_hotel_ten">01 280 0100</string>
     <string name="site_hotel_ten"><![CDATA[https://www.marriott.com/hotels/travel/lossi-sheraton-lagos-hotel/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2&y_source=1_MzE0MTU4Mi03MTUtbG9jYXRpb24uZ29vZ2xlX3dlYnNpdGVfb3ZlcnJpZGU%3D]]></string>
+    <string name="place">place</string>
+    <string name="address">address</string>
+    <string name="place_name">place_name</string>
+    <string name="place_address">place_address</string>
+    <string name="business_hour">business_hour</string>
+    <string name="event_date">event_date</string>
+    <string name="image_of_place">place_image</string>
+    <string name="place_phone">place_phone</string>
+    <string name="place_website">website</string>
 </resources>

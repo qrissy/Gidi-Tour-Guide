@@ -65,18 +65,19 @@ public class RestaurantsFragment extends Fragment {
         // {@link ListView} will display list items for each {@link Word} in the list.
         listView.setAdapter(adapter);
 
+        // Set a click listener to see more information of the place when the list item is clicked on
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
                 Place place = places.get(i);
                 Intent intent = new Intent(getActivity(), PlaceDetailActivity.class);
-                intent.putExtra("place_name", place.getNameOfPlace());
-                intent.putExtra("place_address", place.getAddress());
-                intent.putExtra("business_hour", place.getBusinessHours());
-                intent.putExtra("place_phone", place.getPhoneNumber());
-                intent.putExtra("website", place.getWebsite());
-                intent.putExtra("place_image", place.getImageResourceId());
+                intent.putExtra(getString(R.string.place_name), place.getNameOfPlace());
+                intent.putExtra(getString(R.string.place_address), place.getAddress());
+                intent.putExtra(getString(R.string.business_hour), place.getBusinessHours());
+                intent.putExtra(getString(R.string.place_phone), place.getPhoneNumber());
+                intent.putExtra(getString(R.string.place_website), place.getWebsite());
+                intent.putExtra(getString(R.string.image_of_place), place.getImageResourceId());
                 startActivity(intent);
             }
         });
