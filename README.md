@@ -1,0 +1,1 @@
+This app presents relevant information to a user who is visiting a city by listing top attractions, restaurants, public places and events. It contain all the best known secret places that only locals know
